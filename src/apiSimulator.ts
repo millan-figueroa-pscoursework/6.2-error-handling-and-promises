@@ -1,3 +1,4 @@
+import { NetworkError, DataError } from './errorClasses.ts';
 // Promises and Error Handling Challenge
 
 // Types for clarity
@@ -24,7 +25,7 @@ export const fetchProductCatalog = (productId: number): Promise<Catalog> => {
                     { id: 2, name: "Wireless Noise-Cancelling Headphones", price: 200 },
                 ]);
             } else {
-                reject("Failed to fetch product catalog");
+                reject(new DataError("Product data is missing required fields"));
             }
         }, 1000);
     });
@@ -42,7 +43,7 @@ export const fetchProductReviews = (name: string): Promise<ProductReview> => {
                         comment: "Excellent quality and fast shipping!",
                     }]);
             } else {
-                reject("Failed to fetch product reviews");
+                reject(new NetworkError("Failed to fetch product reviews (network issue)"));
             }
         }, 1000);
     });
@@ -61,7 +62,7 @@ export const fetchSalesReport = (reportId: number): Promise<SalesReport> => {
                     topProduct: "Wireless Noise-Cancelling Headphones",
                 });
             } else {
-                reject("Failed to fetch sales report");
+                reject(new NetworkError("Failed to fetch sales report (network issue)"));
             }
         }, 1000);
     });

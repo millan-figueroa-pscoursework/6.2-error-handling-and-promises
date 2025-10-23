@@ -2,6 +2,7 @@ import './style.css'
 // import { handleOrder } from './customErrorHandling';
 import { fetchUserData, fetchOrderHistory, fetchOrderDetails } from './dataFetcher.ts'
 import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from './apiSimulator.ts';
+import { NetworkError, DataError } from './errorClasses.ts';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

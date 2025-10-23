@@ -1,4 +1,4 @@
-# Lab 6.2:Promises and Error Handling Challenge
+# Lab 6.2: Promises and Error Handling Challenge
 
 ### Part 1: Set Up Your Project
 
@@ -10,7 +10,7 @@
 - [x] In `apiSimulator.ts`, create the following functions:
   - [x] **`fetchProductCatalog()`** — returns a mock list of products after 1s, sometimes rejects with `"Failed to fetch product catalog"`.
   - [x] **`fetchProductReviews(productId: number)`** — returns mock reviews after 1.5s, sometimes rejects with `"Failed to fetch reviews for product ID ${productId}"`.
-  - [ ] **`fetchSalesReport()`** — returns a mock sales report after 1s, sometimes rejects with `"Failed to fetch sales report"`.
+  - [x] **`fetchSalesReport()`** — returns a mock sales report after 1s, sometimes rejects with `"Failed to fetch sales report"`.
 
 ### Part 3: Build Main Application Logic
 
@@ -33,6 +33,9 @@
   - [ ] Accepts an async function, retry count, and delay between attempts.
   - [ ] Uses `setTimeout` and recursion to retry failed Promises.
 - [ ] Implement retries (up to three attempts) for all API calls before giving up.
+      <br>
+      <br>
+      <br>
 
 # Activity: Using Promises to Simulate API Requests
 
