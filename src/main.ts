@@ -1,5 +1,5 @@
 import './style.css'
-import { handleOrder, processOrder } from './customErrorHandling';
+import { handleOrder } from './customErrorHandling';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

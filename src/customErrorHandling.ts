@@ -17,7 +17,7 @@ class ValidationError extends Error {
 class PaymentError extends Error {
     constructor(message: string) {
         super(message); // call the built-in Error constructor
-        this.name = "ValidationError";
+        this.name = "PyamentError";
     }
 }
 
